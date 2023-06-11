@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html::-webkit-scrollbar{
+    width: 5px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+html::-webkit-scrollbar-track{
+    background-color: #ccc;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Commonly Used */
+.black {
+    background-color: black !important;
+}
+.white {
+    color: white !important;
+}
+.font-15{
+    font-size: 15px !important;
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+/* Commonly Used */
+
+/* Start Navigator */
+.mobile-nav-container{
+    display: none;
+}
+
+.navigator {
+    width: 100%;
+    height: 46.5px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    position: relative;
+    position: fixed; z-index: 3;
+    margin-top: -46.5px;
+}
+.nav-merch {
+    display: none;
+}
+.nav-dropdown{
+    display: none;
+}
+.nav-dropdown:hover .mobile-nav-container{
+    display: block;
+}
+
+.navigator > div{
+    float: left;
+    line-height: 46.5px;
+    padding: 0 24px 0;
+}
+
+.navigator > div >a{
+    text-decoration: none;
+}
+
+.navigator > div:hover{
+    color: black !important;
+    background-color: #ccc !important;
+    cursor: pointer;
+}
+
+.navigator > div:hover >a{
+    color: black !important;
+}
+
+.navigator .nav-more{
+    width: 104px;
+    height: 46.5px;
+    position: relative;
+}
+
+.nav-sub-more{
+    background-color: white;
+    position: absolute;
+    top: 46.5px;
+    left: 0;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    display: none;
+}
+
+.nav-sub-more div {
+    width: 180px;
+    padding-left: 18px;
+    height: 36px;
+    line-height: 36px;
+    display: none;
+}
+
+.nav-more:hover div{
+    display: block;
+    text-transform: capitalize;
+} 
+.nav-search,
+.nav-dropdown{
+    position: absolute;
+    right: 0; top: 0;
+    color: white;
+}
+
+.main .navigator .nav-search:hover{
+    background-color: red !important;
+    color: black !important;
+}
+.main .navigator .nav-dropdown:hover{
+    background-color: #ccc;
+}
+
+.nav-sub-more div:hover {
+    background-color: #ccc;
+}
+.nav-sub-more a{
+    text-decoration: none;
+    color: black !important;
+}
+/* End Navigator */
+
+/* Start Slider */
+.content .slider{
+    margin-top: 45.6px;
+    width: 100%;
+    padding-top: 50%;
+    background: url('https://www.w3schools.com/w3images/ny.jpg') top center / cover no-repeat;
+    position: relative;
+}
+.content .slider .slider-content{
+    text-align: center;
+}
+.slider-content .slider-content-heading{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    position: absolute; bottom: 80px;
+    width: 100%;
+}
+.slider-content .slider-content-content{
+    font-weight: 700;
+    line-height: 22.5px;
+    position: absolute; bottom: 52px; width: 100%;
+}
+/* End Slider */
+
+/* Content Space Define */
+.content .content-container,
+.content .content-heading,
+.content .content-sub-heading{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content .content-heading,
+.content .content-sub-heading{
+    text-align: center;
+}
+
+.content .content-container{
+    padding: 64px 16px;
+}
+
+.content .content-heading{
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 45px;
+}
+.content .content-sub-heading{
+    line-height: 22.5px;
+    opacity: 0.6;
+    font-style: italic;
+    margin: 15px 0;
+}
+
+/* Start About */
+.about-text{
+    margin: 15px 0;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.band-members-container{
+    overflow: hidden;
+}
+.band-members-container .band-members{
+    float: left;
+    width: calc(100% /3);
+    text-align: center;
+    padding: 32px 0;
+}
+
+.band-members-container .band-members img{
+    width: 152px;
+    height: 152px;
+    border-radius: 4px;
+}
+.band-members-container .band-members p{
+    padding: 15px 0;
+    font-size: 15px;
+}
+/* End About */
+
+/* Start Tour */
+
+.Tour{
+    background-color: black;
+}
+.ticket-section{
+    padding: 32px 0;
+}
+.months {
+    background-color: #fff;
+    color: #757575;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.months .unavailable{
+    margin-left: 16px;
+    background-color: red;
+    color: white;
+    padding: 4px 8px;
+}
+.months .available{
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 4px 8px;
+    float: right;
+    clear: both;
+    margin-top: -4px;
+    overflow: hidden;
+}
+.tour-location {
+    overflow: hidden;
+    margin-left: -6px;
+    margin-right: -6px;
+}
+.tour-place{
+    float: left;
+    width: 33.33333%;
+    padding: 0 6px;
+}
+
+.tour-place img{
+    width: 100%;
+    display: block;
+}
+.tour-place img:hover{
+    opacity: 0.6;
+}
+
+.tour-place .tour-des{
+    color: black;
+    background-color: white;
+    padding: 16px;
+}
+
+.tour-des .tour-des-heading{
+    font-size: 15px;
+    font-weight: 600;
+    font-style: bold;
+}
+
+.tour-des .tour-des-subHeading{
+    margin: 16px 0;
+    opacity: 0.6;
+}
+.tour-des .tour-des-content {
+    line-height: 1.4;
+    margin: 16px 0;
+}
+
+.tour-des .tour-buy-button{
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+.tour-des .tour-buy-button:hover{
+    background-color: #ccc;
+    color: black;
+}
+/* End Tour */
+
+/* Start Contact */
+.contact-info p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+.contact-info i{
+    margin-right: 12px;
+}
+.upper input{
+ width: 100%;
+}
+
+.upper{
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.Contact input{
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+}
+.Contact button{
+    border: none;
+    background-color: black;
+    color: white;
+    margin-top: 18px;
+    padding: 12px 16px;
+    float: right;
+}
+.Contact button:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+/* End Contact */
+
+/* Footer */
+.footer img{
+    width: 100%;
+}
+.content-footer{
+    height: 160px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-footer p{
+    display: block;
+    font-size: 18px;
+}
+.content-footer i{
+    display: inline;
+}
+.content-footer a{
+    color: rgb(50, 154, 240);
+}
+/* End Footer */
+
+/* Modal */
+.modal{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: fixed; top: 0;
+    display: flex; justify-content: center; align-items: center;
+    display: none;
+}
+
+.modal-section{
+    background-color: white;
+    width: 65%;
+    min-height: 25%;
+    animation: slideDown ease 400ms;
+}
+
+.modal-section .modal-heading{
+    background-color: #009688;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 45px;
+    padding: 32px 16px;
+    position: relative;
+}
+.modal-section .modal-heading .case{
+    margin-right: 16px;
+}
+.modal-section .modal-heading .close{
+    font-size: 15px;
+    padding: 18px 0;
+    padding-left: 18px;
+    padding-right: 12px;
+    position: absolute; top: 0; right: 0;
+    cursor: pointer;
+}
+.modal-section .modal-heading .close:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+.modal-content {
+    padding: 0 16px;
+}
+
+.modal-content p{
+    padding: 16px 0;
+}
+
+.modal-content input{
+    padding: 12px 8px;
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+.modal-content button{
+    border: none;
+    width: 100%;
+    padding: 16px 0;
+    cursor: pointer;
+    background-color: #009688;
+    color: white;
+}
+.modal-content button:hover{
+    opacity: 0.8;
+}
+
+.modal-content .help{
+    padding: 30px 0;
+    float: right;
+    font-size: 14px;
+}
+
+.modal-content a{
+    color: rgb(69, 185, 185);
+}
+.modal.open{
+    display: flex;
+} 
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-150px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+

@@ -1,0 +1,97 @@
+@media (max-width: 739px){
+    .nav-more,
+    .nav-band,
+    .nav-tour,
+    .nav-contact,
+    .nav-search{
+        display: none;
+    }
+    .content .slider .slider-content{
+        display: none;
+    }
+    .nav-dropdown{
+        display: block;
+    }
+    .mobile-nav-container{
+        position: fixed; top: 46px;
+        background-color: black;
+        width: 100%;
+        color: white;
+        line-height: 46.5px;
+    }
+    .mobile-nav-container div{
+        padding: 0 24px;
+    }
+    .mobile-nav-container div:hover a,
+    .mobile-nav-container > div:hover{
+        background-color: #ccc;
+        color: black;
+        cursor: pointer;
+    }
+    .mobile-nav-container div a{
+        text-decoration: none;
+        color: white;
+        display: block;
+    }
+    .nav-mobile-merch {
+        position: relative;
+    }
+    .nav-mobile-subnav {
+        display: none;
+    }
+    .nav-mobile-merch:hover .nav-mobile-subnav{
+        display: block;
+        background-color: white;
+        width: 120%;
+        margin-left: -41px;
+        padding: 0px 17px;
+    }
+    .nav-mobile-merch:hover .nav-mobile-subnav a{
+        background-color: white;
+        margin-left: 48px;
+    }
+    .nav-mobile-merch:hover .nav-mobile-subnav:hover,
+    .nav-mobile-merch:hover .nav-mobile-subnav:hover a{
+        background-color: grey;
+        color: white;
+    }
+    .mobile-nav-container.open{
+        display: block;
+    }
+
+    .band-members-container .band-members{
+        float: none;
+        width: auto;
+        padding: 0;
+    }
+    .band-members-container .band-members img{
+        width: 65%;
+        height: 75%;
+        margin-bottom: 16px;
+    }
+    .tour-place{
+        float: none;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .contact-info,
+    .contact-form{
+        width: 100%;
+        float: none;
+    }
+    .col{
+        float: none;
+    }
+    .col-half{
+        width: 100%;
+    }
+    .contact-form{
+        margin-top: 16px;
+    }
+    .contact-form form input{
+        width: 100%;
+    }
+    .modal-section{
+        width: 90%;
+    }
+}
