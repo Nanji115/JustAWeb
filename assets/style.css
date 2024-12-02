@@ -145,23 +145,26 @@ html{
     margin-top: 45.6px;
     width: 100%;
     padding-top: 50%;
-    background: url('https://www.w3schools.com/w3images/ny.jpg') top center / cover no-repeat;
+    background: url('https://media.vneconomy.vn/images/upload/2021/04/21/trieu19-1550810462780279894593.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
 }
 .content .slider .slider-content{
+    color:black;
     text-align: center;
 }
 .slider-content .slider-content-heading{
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    position: absolute; bottom: 80px;
+    position: absolute; top: 80px;
     width: 100%;
 }
 .slider-content .slider-content-content{
     font-weight: 700;
     line-height: 22.5px;
-    position: absolute; bottom: 52px; width: 100%;
+    position: absolute; top: 122px; width: 100%;
 }
 /* End Slider */
 
@@ -184,7 +187,7 @@ html{
 
 .content .content-heading{
     font-size: 30px;
-    font-weight: 400;
+    font-weight: 500;
     letter-spacing: 4px;
     line-height: 45px;
 }
@@ -197,6 +200,7 @@ html{
 
 /* Start About */
 .about-text{
+    font-size: 20px;
     margin: 15px 0;
     line-height: 1.4;
     text-align: justify;
@@ -378,7 +382,7 @@ html{
 
 .modal-section{
     background-color: white;
-    width: 65%;
+    width: 50%;
     min-height: 25%;
     animation: slideDown ease 400ms;
 }
@@ -413,7 +417,7 @@ html{
 }
 
 .modal-content {
-    padding: 0 16px;
+    padding: 0 64px;
 }
 
 .modal-content p{
